@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "ESNEXT",
+    "declaration": true,
+    "sourceMap": false
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
