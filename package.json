@@ -1,16 +1,18 @@
 {
   "name": "@qxy/utils",
+  "amdName": "QxyUtils",
   "version": "0.0.1",
   "license": "MIT",
   "author": "ntnyq <ntnyq13@gmail.com> (https://ntnyq.com)",
   "exports": "./dist/foo.modern.js",
-  "main": "./dist/foo.js",
-  "unpkg": "./dist/foo.umd.js",
-  "module": "./dist/foo.module.js",
+  "main": "dist/foo.js",
+  "umd:main": "dist/foo.umd.js",
+  "unpkg": "dist/foo.umd.js",
+  "module": "dist/foo.module.js",
   "source": "src/index.ts",
-  "types": "./dist/foo.d.ts",
+  "types": "dist/foo.d.ts",
   "scripts": {
-    "build": "rimraf dist && microbundle",
+    "build": "rimraf dist && microbundle --no-sourcemap",
     "dev": "microbundle watch"
   },
   "prettier": "@qxy/prettier-config",
