@@ -7,6 +7,9 @@
     "email": "ntnyq13@gmail.com",
     "url": "https://ntnyq.com"
   },
+  "files": [
+    "dist"
+  ],
   "exports": "./dist/foo.modern.js",
   "main": "dist/foo.js",
   "umd:main": "dist/foo.umd.js",
