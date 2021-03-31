@@ -3,9 +3,14 @@
     "target": "ESNEXT",
     "module": "ESNEXT",
     "declaration": true,
-    "sourceMap": false
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
   ]
 }
