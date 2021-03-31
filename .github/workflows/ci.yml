@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+  push:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - .vscode
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - run: yarn test
